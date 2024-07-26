@@ -39,4 +39,8 @@ public class AccommodationService {
     public void deleteAccomodation(Long id) {
         accommodationRepository.deleteById(id);
     }
+
+    public static void deleteByDestinationId(Long destinationId) {
+        AccommodationRepository.deleteByDestinationId(destinationId);
+    }
 }
