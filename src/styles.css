@@ -1,1 +1,31 @@
 /* You can add global styles to this file, and also import other style files */
+.navbar-search {
+    background-color: #343a40; /* Ensures the search bar section matches the navbar */
+  }
+  /* src/styles.css or src/app/admin/manage-destinations/manage-destinations.component.css */
+.btn-animate {
+    transition: all 0.3s ease;
+}
+
+.btn-animate:hover {
+    transform: scale(1.05);
+}
+
+.btn-animate:active {
+    transform: scale(0.95);
+}
+.background-image {
+    background-image: url('C:/Users/tcp/Desktop/tunism/tunismAng/src/images/background.jpg'); /* Replace with the path to your image */
+    background-size: cover; /* Adjusts the size of the image to cover the container */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    padding: 20px; /* Optional: Adds padding to ensure the content doesn't overlap with the edges */
+    border-radius: 8px; /* Optional: Adds rounded corners to the container */
+  }
+  .destination-image {
+    width: 150px; /* Set the desired width */
+    height: 150px; /* Set the desired height */
+    object-fit: cover; /* This ensures the image covers the area and maintains aspect ratio */
+    border-radius: 8px; /* Optional: to add some rounded corners */
+  }
+  

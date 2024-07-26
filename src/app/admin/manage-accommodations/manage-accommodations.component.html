@@ -1,0 +1,26 @@
+<!-- manage-accommodations.component.html -->
+<div class="container mt-3">
+    <h2>Manage Accommodations</h2>
+  
+    <!-- Message when there are no accommodations -->
+    <div *ngIf="noAccommodations" class="alert alert-info" role="alert">
+      There are no accommodations available for this destination.
+    </div>
+  
+    <!-- Display accommodations if available -->
+    <div class="row" *ngIf="!noAccommodations">
+      <div *ngFor="let accommodation of accommodations" class="col-md-4">
+        <div class="card mb-3 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">{{ accommodation.name }}</h5>
+            <p class="card-text">{{ accommodation.type }}</p>
+            <p class="card-text">{{ accommodation.description }}</p>
+            <p class="card-text">Destination: {{ accommodation.destination.name }}</p>
+            <button class="btn btn-warning" (click)="editAccommodation(accommodation.id)">Edit</button>
+            <button class="btn btn-danger" (click)="deleteAccommodation(accommodation.id)">Delete</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

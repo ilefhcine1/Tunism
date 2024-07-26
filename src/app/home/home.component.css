@@ -1,0 +1,17 @@
+/* src/app/home/home.component.css */
+.container {
+  margin-top: 50px;
+}
+
+.card {
+  margin-bottom: 20px;
+}
+
+.card img {
+  max-height: 150px;
+}
+.scrollable-menu {
+    max-height: 200px; /* Adjust the height as needed */
+    overflow-y: auto;
+  }
+  
