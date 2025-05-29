@@ -42,7 +42,7 @@ public class AccommodationController {
 
     @DeleteMapping("/{id}")
     public ResponseEntity<Void> deleteAccomodation(@PathVariable Long id) {
-       accommodationService.deleteAccomodation(id);
+        accommodationService.deleteAccomodation(id);
         return ResponseEntity.noContent().build();
     }
 }
